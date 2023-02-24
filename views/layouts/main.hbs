@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <meta name="description" content="Actuamos no mercado de Tecnologia de Informação e de Comunicação e nosso lema é actuar sempre profissionalmente para tornar o seu negócio de acordo a actual realidade tecnológica. Para isso, contamos com uma equipe de profissionais dos mais qualificados."> --}}
+    <meta name="keywords" content="PIBATEC, Consultoria de Informatica, Tecnologia de Informacao e de comunicacao,software, hardware,LAN,WAM, redes de computadores, IT, Helpdesk, sistemas informaticos, engenharia informatica, assistencia de informatica">
+    <title>PIBATEC</title>
+    <meta name="description" content="Um site de exemplo do modulo css Actuamos no mercado de Tecnologia de Informação e de Comunicação e nosso lema é actuar sempre profissionalmente para tornar o seu negócio de acordo a actual realidade tecnológica. Para isso, contamos com uma equipe de profissionais dos mais qualificados.
+">
+    {{!-- <meta name="keywords" content="PIBATEC LIMITADA,PIBATEC, Consultoria de Informatica, Tecnologia, Comunicacao, Software, Hardware, LAN,WAN, Mocambique,Mozambique, IT, Engenharia informatica"> --}}
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+</head>
+
+<body>
+    
+    {{>_navbar}}
+    <section class="section-estilo">
+         <div class="container mt-4"> 
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{else}}
+
+        {{/if}}
+
+
+        {{>_msg}} 
+        {{{body}}}
+        <a class="whats-estilo" href="https://api.whatsapp.com/send?phone=+258868815644" target="_blank">
+                <img style="width: 100px;" src="img/whats.png" alt="">
+        </a>
+    </section>
+    
+    {{>_rodape}}
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="/public/js/bootstrap.js"></script>
+</html>
